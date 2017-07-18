@@ -1,9 +1,9 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { EventService } from '../events/shared/events.service';
+import { EventService } from '../shared/events.service';
 
 @Component({
-    templateUrl: '/app/event-details/event-details.component.html',
+    templateUrl: '/app/events/event-details/event-details.component.html',
     styles: [`
         .container { padding-left: 20px; padding-right: 20px;}
         .event-image { height: 100px; }
