@@ -17,6 +17,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { EventsAppComponent } from './events-app.component'
 import { ToastrService } from './common/toastr.service';
 import { Error404Component } from './errors/404.component';
+import { AuthService } from './user/auth.service';
 
 @NgModule({
     imports: [
@@ -37,7 +38,8 @@ import { Error404Component } from './errors/404.component';
         ToastrService, 
         EventRouteActivatorService,
         { provide: 'canDeactivateCreateEvent', useValue: checkDirtyState },
-        EventsListResolverService
+        EventsListResolverService,
+        AuthService
     ],
     bootstrap: [EventsAppComponent]
 })
